@@ -9,6 +9,5 @@
 import UIKit
 
 class HandleLayer: CALayer {
-    var highlighted = false
-    var slider = CustomSlider()
+    var slider: CustomSlider?
 }

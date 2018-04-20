@@ -14,6 +14,15 @@
 		57A8267A20874064007A127F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A8267820874064007A127F /* Main.storyboard */; };
 		57A8267C20874066007A127F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A8267B20874066007A127F /* Assets.xcassets */; };
 		57A8267F20874066007A127F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A8267D20874066007A127F /* LaunchScreen.storyboard */; };
+		57DA61AE2089C1310091FAE1 /* FocusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DA61AD2089C1310091FAE1 /* FocusImageView.swift */; };
+		57DA61B02089C5540091FAE1 /* FocusOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DA61AF2089C5540091FAE1 /* FocusOptions.swift */; };
+		57DA61B22089C9C10091FAE1 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DA61B12089C9C10091FAE1 /* ExampleViewController.swift */; };
+		57DA61BA2089D4140091FAE1 /* focus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B42089D4130091FAE1 /* focus@2x.png */; };
+		57DA61BB2089D4140091FAE1 /* brightness_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B52089D4130091FAE1 /* brightness_lock.png */; };
+		57DA61BC2089D4140091FAE1 /* brightness_knob_mask_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B62089D4130091FAE1 /* brightness_knob_mask_clear.png */; };
+		57DA61BD2089D4140091FAE1 /* brightness_knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B72089D4130091FAE1 /* brightness_knob.png */; };
+		57DA61BE2089D4140091FAE1 /* brightness_knob_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B82089D4130091FAE1 /* brightness_knob_mask.png */; };
+		57DA61BF2089D4140091FAE1 /* brightness_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DA61B92089D4140091FAE1 /* brightness_bar.png */; };
 		A4E2E85D886282ACD87CBCEE /* Pods_AHCameraFocus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2317091C3FC115B0B25A74 /* Pods_AHCameraFocus.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +36,15 @@
 		57A8267B20874066007A127F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A8267E20874066007A127F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A8268020874066007A127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DA61AD2089C1310091FAE1 /* FocusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusImageView.swift; sourceTree = "<group>"; };
+		57DA61AF2089C5540091FAE1 /* FocusOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusOptions.swift; sourceTree = "<group>"; };
+		57DA61B12089C9C10091FAE1 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		57DA61B42089D4130091FAE1 /* focus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "focus@2x.png"; sourceTree = "<group>"; };
+		57DA61B52089D4130091FAE1 /* brightness_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness_lock.png; sourceTree = "<group>"; };
+		57DA61B62089D4130091FAE1 /* brightness_knob_mask_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness_knob_mask_clear.png; sourceTree = "<group>"; };
+		57DA61B72089D4130091FAE1 /* brightness_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness_knob.png; sourceTree = "<group>"; };
+		57DA61B82089D4130091FAE1 /* brightness_knob_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness_knob_mask.png; sourceTree = "<group>"; };
+		57DA61B92089D4140091FAE1 /* brightness_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness_bar.png; sourceTree = "<group>"; };
 		6546B7F04BAFBC5C1A391E6E /* Pods-AHCameraFocus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHCameraFocus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHCameraFocus/Pods-AHCameraFocus.debug.xcconfig"; sourceTree = "<group>"; };
 		71DCE9AE19C327F20E70EE5F /* Pods-AHCameraFocus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHCameraFocus.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHCameraFocus/Pods-AHCameraFocus.release.xcconfig"; sourceTree = "<group>"; };
 		CF2317091C3FC115B0B25A74 /* Pods_AHCameraFocus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHCameraFocus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +83,7 @@
 		57A8267320874064007A127F /* AHCameraFocus */ = {
 			isa = PBXGroup;
 			children = (
+				57DA61B32089D40C0091FAE1 /* Images */,
 				57A8267620874064007A127F /* AHCameraFocusViewController.swift */,
 				57A8267420874064007A127F /* AppDelegate.swift */,
 				57A8267B20874066007A127F /* Assets.xcassets */,
@@ -73,8 +92,24 @@
 				57A8268020874066007A127F /* Info.plist */,
 				57A8267D20874066007A127F /* LaunchScreen.storyboard */,
 				57A8267820874064007A127F /* Main.storyboard */,
+				57DA61AD2089C1310091FAE1 /* FocusImageView.swift */,
+				57DA61AF2089C5540091FAE1 /* FocusOptions.swift */,
+				57DA61B12089C9C10091FAE1 /* ExampleViewController.swift */,
 			);
 			path = AHCameraFocus;
+			sourceTree = "<group>";
+		};
+		57DA61B32089D40C0091FAE1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				57DA61B92089D4140091FAE1 /* brightness_bar.png */,
+				57DA61B62089D4130091FAE1 /* brightness_knob_mask_clear.png */,
+				57DA61B82089D4130091FAE1 /* brightness_knob_mask.png */,
+				57DA61B72089D4130091FAE1 /* brightness_knob.png */,
+				57DA61B52089D4130091FAE1 /* brightness_lock.png */,
+				57DA61B42089D4130091FAE1 /* focus@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		F4302B1DF6030B701BC5B3FC /* Pods */ = {
@@ -155,8 +190,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DA61BE2089D4140091FAE1 /* brightness_knob_mask.png in Resources */,
+				57DA61BD2089D4140091FAE1 /* brightness_knob.png in Resources */,
 				57A8267F20874066007A127F /* LaunchScreen.storyboard in Resources */,
+				57DA61BA2089D4140091FAE1 /* focus@2x.png in Resources */,
+				57DA61BF2089D4140091FAE1 /* brightness_bar.png in Resources */,
+				57DA61BC2089D4140091FAE1 /* brightness_knob_mask_clear.png in Resources */,
 				57A8267C20874066007A127F /* Assets.xcassets in Resources */,
+				57DA61BB2089D4140091FAE1 /* brightness_lock.png in Resources */,
 				57A8267A20874064007A127F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +265,9 @@
 			files = (
 				57A8267720874064007A127F /* AHCameraFocusViewController.swift in Sources */,
 				5753F79D208830E500BEB011 /* HandleLayer.swift in Sources */,
+				57DA61AE2089C1310091FAE1 /* FocusImageView.swift in Sources */,
+				57DA61B02089C5540091FAE1 /* FocusOptions.swift in Sources */,
+				57DA61B22089C9C10091FAE1 /* ExampleViewController.swift in Sources */,
 				5753F79B2088309C00BEB011 /* CustomSlider.swift in Sources */,
 				57A8267520874064007A127F /* AppDelegate.swift in Sources */,
 			);
@@ -373,7 +417,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K348NRT62P;
 				INFOPLIST_FILE = AHCameraFocus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = monolithic.AHCameraFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -389,7 +436,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K348NRT62P;
 				INFOPLIST_FILE = AHCameraFocus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = monolithic.AHCameraFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -15,7 +15,6 @@ class CustomSlider: UIControl {
     let trackLayer = CALayer()
     let clearLayer = CALayer()
     let handleLayer = HandleLayer()
-    let touchHandleLayer = HandleLayer()
 
     var barImage: UIImage?
     var handleImage: UIImage?
@@ -46,9 +45,6 @@ class CustomSlider: UIControl {
         barImage = UIImage(named: "brightness_bar.png")
         trackLayer.contents = barImage?.cgImage
         self.layer.addSublayer(trackLayer)
-
-        touchHandleLayer.slider = self
-        self.layer.addSublayer(touchHandleLayer)
 
         handleImage = UIImage(named: "brightness_knob.png")
         handleLayer.slider = self
@@ -81,8 +77,6 @@ class CustomSlider: UIControl {
                                  width: (maskImage?.size.width ?? 0) / 2,
                                  height: (maskImage?.size.height ?? 0) / 2);
 
-        touchHandleLayer.setNeedsDisplay()
-
         UIView.animate(withDuration: 0.3,
                        delay: 0.0,
                        options: .curveEaseIn,
@@ -106,12 +100,7 @@ class CustomSlider: UIControl {
 
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         self.previousTouchPoint = touch.location(in: self)
-
-        if touchHandleLayer.frame.contains(self.previousTouchPoint) {
-            handleLayer.highlighted = true
-        }
-
-        return handleLayer.highlighted
+        return true
     }
 
     override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
@@ -122,10 +111,10 @@ class CustomSlider: UIControl {
 
         previousTouchPoint = touchPoint
 
-        if handleLayer.highlighted {
-            self.value += valueDelta
-            self.value = bound(value: self.value, lower: minimumValue, upper: maximumValue)
-        }
+        self.value += valueDelta
+        print(value)
+        self.value = bound(value: self.value, lower: minimumValue, upper: maximumValue)
+        print(value)
 
         CATransaction.begin()
         CATransaction.disableActions()
@@ -137,10 +126,6 @@ class CustomSlider: UIControl {
         self.sendActions(for: .valueChanged)
 
         return true
-    }
-
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
-        handleLayer.highlighted = false
     }
 
     func fadeOut() {
