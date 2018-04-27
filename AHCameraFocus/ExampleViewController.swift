@@ -58,4 +58,21 @@ class ExampleViewController: UIViewController {
 
         session.startRunning()
     }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        coordinator.animate(alongsideTransition: { _ in
+            let currentDevice: UIDevice = UIDevice.current
+            let orientation: UIDeviceOrientation = currentDevice.orientation
+            self.previewLayer.frame = self.view.bounds
+        }, completion: nil)
+    }
+
+    func getOrientation() -> AVCaptureVideoOrientation {
+        switch UIDevice.current.orientation {
+        case .portrait:
+            return .portrait
+        }
+    }
 }

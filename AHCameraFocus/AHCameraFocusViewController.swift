@@ -30,7 +30,6 @@ class AHCameraFocusViewController: UIViewController, UIGestureRecognizerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.isUserInteractionEnabled = true
         self.focusImageView = FocusImageView(frame: CGRect(x: 0,
                                                            y: 0,
                                                            width: focusOptions.focusSize,
