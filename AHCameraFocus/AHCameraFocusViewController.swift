@@ -48,7 +48,6 @@ class AHCameraFocusViewController: UIViewController, UIGestureRecognizerDelegate
                                              y: 0,
                                              width: 0,
                                              height: 0)
-        lockedNotifyImageView.image = focusOptions.lockedImage
         lockedNotifyImageView.alpha = 0.0
         self.view.addSubview(lockedNotifyImageView)
 

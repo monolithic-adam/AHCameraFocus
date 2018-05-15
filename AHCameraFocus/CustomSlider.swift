@@ -42,16 +42,16 @@ class CustomSlider: UIControl {
     }
 
     func commonInit() {
-        barImage = UIImage(named: "brightness_bar.png")
+        barImage = UIImage(named: "bar.png")
         trackLayer.contents = barImage?.cgImage
         self.layer.addSublayer(trackLayer)
 
-        handleImage = UIImage(named: "brightness_knob.png")
+        handleImage = UIImage(named: "handle.png")
         handleLayer.slider = self
         handleLayer.contents = handleImage?.cgImage
         self.layer.addSublayer(handleLayer)
 
-        maskImage = UIImage(named: "brightness_knob_mask_clear.png")
+        maskImage = UIImage(named: "handle_mask_clear.png")
         maskLayer.contents = maskImage?.cgImage
         trackLayer.mask = maskLayer
 
@@ -63,15 +63,15 @@ class CustomSlider: UIControl {
     func setLayerFrames() {
         trackLayer.frame = CGRect(x: 0, y: 72, width: (barImage?.size.width ?? 0) / 2, height: (barImage?.size.height ?? 0) / 2)
 
-        useableTrackLength = self.bounds.width - (handleImage?.size.height ?? 0) / 2
-        useableMaskTrackLength = ((maskImage?.size.width ?? 0) / 4) - (handleImage?.size.height ?? 0) / 2
+        useableTrackLength = self.bounds.width - (handleImage?.size.height ?? 0) / 4
+        useableMaskTrackLength = ((maskImage?.size.width ?? 0) / 4) - (handleImage?.size.height  ?? 0) / 4
         let handleCenter = positionFor(value: value)
         let maskCenter = maskPositionFor(value: value)
 
         handleLayer.frame = CGRect(x: handleCenter,
-                                   y: (-(handleImage?.size.width ?? 0) / 4) + 75,
-                                   width: (handleImage?.size.width ?? 0)  / 2,
-                                   height: (handleImage?.size.height ?? 0)  / 2)
+                                   y: (-(handleImage?.size.width ?? 0) / 8) + 75,
+                                   width: (handleImage?.size.width ?? 0)  / 4,
+                                   height: (handleImage?.size.height ?? 0)  / 4)
         maskLayer.frame = CGRect(x: maskCenter - 130.5,
                                  y: 0,
                                  width: (maskImage?.size.width ?? 0) / 2,

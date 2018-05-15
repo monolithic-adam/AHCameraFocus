@@ -20,7 +20,7 @@ class FocusImageView: UIImageView {
     }
 
     func commonInit() {
-        self.image = UIImage(named: "focus")
+        self.image = UIImage(named: "reticle")
     }
 
     func startLongPressAnimation() {

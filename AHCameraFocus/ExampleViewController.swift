@@ -73,6 +73,12 @@ class ExampleViewController: UIViewController {
         switch UIDevice.current.orientation {
         case .portrait:
             return .portrait
+        case .landscapeLeft:
+            return .landscapeLeft
+        case .landscapeRight:
+            return .landscapeRight
+        default:
+            return .portrait
         }
     }
 }
